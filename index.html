@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios JavaScript </title>
+  </head>
+  <body>
+
+    <script>
+      var password = document.getElementById('password').value;
+      function verificar(){
+
+          if(password.length<5){
+            alert('la contraseña no debe tener menos de 5 caracteres');
+          }else {
+            alert('es correcta');
+          }
+        }
+    </script>
+    <form>
+      ingrese password:
+  <input type="password" id="password">
+        <input type="button" value="confirmar" onclick="verificar()" ><br>
+
+    </form>
+  </body>
+</html>
